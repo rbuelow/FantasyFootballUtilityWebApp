@@ -7,6 +7,7 @@ namespace FFwebApp.Models.PlayerPositions
 {
     public class Individual
     {
+        public string Name { get; set; }
         //Throwing stats
         public int PassTDs { get; set; }
         public int PassYds { get; set; }

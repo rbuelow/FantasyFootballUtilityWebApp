@@ -1,0 +1,18 @@
+﻿@using FFwebApp.Repositories
+@model List<FFwebApp.Models.PlayerPositions.Individual>
+@{
+    ViewBag.Title = "FantasyFootballCalculator";
+}
+
+<h2>FantasyFootballCalculator</h2>
+<ul>
+@foreach (var player in @FootballStatsDbRepository.GetAllPlayers())
+{
+    <text>
+        <li>
+            @player.Name
+            @player.PassYds
+        </li>
+    </text>
+}
+</ul>

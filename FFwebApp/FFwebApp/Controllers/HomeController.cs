@@ -26,5 +26,10 @@ namespace FFwebApp.Controllers
 
             return View();
         }
+
+        public ActionResult FantasyFootballCalculator()
+        {
+            return View();
+        }
     }
 }
